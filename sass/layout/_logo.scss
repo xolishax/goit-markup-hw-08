@@ -1,0 +1,19 @@
+.logo {
+    font-family: var(--logo-font);
+    list-style: none;
+    text-decoration: none;
+    color: var(--active-text-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+}
+
+.logo-accent {
+    color: #000000;
+}
+
+.logo-accent-last {
+    color: var(--secondary-text-color);
+}

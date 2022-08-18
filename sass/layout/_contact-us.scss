@@ -1,0 +1,24 @@
+.contact-us-link {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+
+
+&:hover,
+&:focus {
+    background: #2196F3;
+}
+}
+
+.contact-us-icon {
+    fill: #FFFFFF;
+}

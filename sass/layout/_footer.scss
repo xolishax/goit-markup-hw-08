@@ -1,0 +1,127 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--dark-bg-color);
+}
+
+.last-section-logo {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.address-text {
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    display: block;
+    margin-bottom: 9px;
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--active-text-color);
+}
+
+.contact-us-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contact-us-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-list {
+    display: flex;
+}
+
+.email-footer-header {
+    width: 207px;
+    height: 16px;
+    left: 815px;
+    top: 2748px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.email-footer-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.email-footer-input {
+    width: 358px;
+    height: 50px;
+    left: 815px;
+    top: 2784px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    outline: transparent;
+}
+
+.email-footer-input::placeholder {
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.email-footer-icon {
+    fill: #FFFFFF;
+}
