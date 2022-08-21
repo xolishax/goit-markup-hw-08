@@ -1,0 +1,137 @@
+.menu-toggle {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+
+    // transform: translateX(100%);
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.mobile-list:first-child {
+    margin-bottom: auto;
+}
+
+.mobile-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+    &:hover,
+    &:focus {
+        color: var(--active-text-color);
+    }
+}
+
+.mobile-nav-item {
+    margin-top: 48px;
+    margin-left: 40px;
+}
+
+.mobile-nav-item:nth-last-child() {
+    margin-bottom: 36px;
+}
+
+.mobile-phone-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+}
+
+.mobile-contact-item {
+    margin-left: 40px;
+}
+
+.mobile-email-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.mobile-contact-item:nth-last-child() {
+    margin-bottom: 32px;
+}
+
+.js-close-menu {
+    display: block;
+    margin-left: auto;
+}
+
+.menu-svg {
+    fill: #212121;
+
+    &:hover,
+    &:focus {
+        fill: var(--active-text-color);
+    }
+}
+
+.mobile-list:nth-child(2) {
+    margin-bottom: 40px;
+}
+.mobile-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.mobile-socials-link {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+
+    background-color: #2196F3;
+
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(22 / 18);
+     
+    
+        letter-spacing: 0.02em;
+    
+        color: #2196F3;
+}

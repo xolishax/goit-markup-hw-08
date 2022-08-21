@@ -325,7 +325,7 @@ img {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -342,6 +342,18 @@ img {
 .clients-icons-link:hover, .clients-icons-link:focus {
   color: #2196F3;
   border: 1px solid #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-icons-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-icons-link {
+    width: 170px;
+  }
 }
 
 .backdrop {
@@ -574,12 +586,17 @@ header {
 }
 
 .header-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 50px;
+  display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+  }
+}
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -626,7 +643,13 @@ header {
   font-size: 26px;
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  margin-right: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo-accent {
@@ -638,12 +661,33 @@ header {
 }
 
 .contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 75px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+  }
+}
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -717,13 +761,19 @@ header {
 
 .decision-section {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
+@media screen and (min-width: 1200px) {
+  .decision-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 .decision-header {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.3636363636;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -734,6 +784,11 @@ header {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .decision-header {
+    font-size: 44px;
+  }
+}
 .features__header {
   position: absolute;
   width: 1px;
@@ -756,10 +811,21 @@ header {
 }
 
 .features-list__item {
-  width: 270px;
+  width: 450px;
 }
 
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    width: 270px;
+  }
+}
 .features-list__header {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -768,6 +834,17 @@ header {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .features-list__header {
+    margin-left: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
 .features-list__text {
   font-size: 14px;
   line-height: 1.7142857143;
@@ -845,13 +922,19 @@ header {
 
 .team__header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 0.8484848485;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team__header {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -896,14 +979,19 @@ header {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients-header {
+    font-size: 36px;
+  }
+}
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -916,6 +1004,15 @@ footer {
   margin-bottom: 20px;
 }
 
+.last-section {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .last-section {
+    text-align: start;
+  }
+}
 .address-text {
   font-style: normal;
   font-size: 14px;
@@ -981,12 +1078,65 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  gap: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    gap: 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .email-footer {
+    margin-left: 166px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .email-footer {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-us {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-us {
+    margin-left: 0;
+  }
+}
 .address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1019,6 +1169,15 @@ footer {
   margin-bottom: 20px;
 }
 
+.email-footer-header {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .email-footer-header {
+    text-align: start;
+  }
+}
 .email-footer-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1026,9 +1185,28 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .email-footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 12px;
+  }
+}
 .email-footer-input {
   width: 358px;
   height: 50px;
@@ -1266,4 +1444,14 @@ footer {
 
 .contact-us-icon {
   fill: #FFFFFF;
+}
+
+.contact-us-header {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-us-header {
+    text-align: start;
+  }
 }/*# sourceMappingURL=main.css.map */

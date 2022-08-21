@@ -9,7 +9,14 @@ footer {
     display: block;
     margin-bottom: 20px;
 }
-
+.last-section {
+    text-align: center;
+}
+@media screen and (min-width: 1200px) {
+    .last-section {
+            text-align: start;
+        }
+    }
 .address-text {
     font-style: normal;
     font-size: 14px;
@@ -61,11 +68,50 @@ footer {
     justify-content: center;
     gap: 10px;
 }
-
 .footer-content {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    
+}
+@media screen and (min-width: 768px) {
+    .footer-content {
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 70px;
+    }
+}
+@media screen and (min-width: 1200px) {
+.footer-content {
+    display: flex;
+    flex-direction: row;
     align-items: baseline;
     gap: 70px;
+}
+}
+@media screen and (min-width: 768px) {
+    .email-footer {
+        margin-left: 166px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .email-footer {
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 768px) {
+    .contact-us {
+        margin-left: 165px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-us {
+        margin-left: 0;
+    }
 }
 
 .address {
@@ -92,11 +138,28 @@ footer {
     color: #FFFFFF;
     margin-bottom: 20px;
 }
+.email-footer-header {
+    text-align: center;
+}
+@media screen and (min-width: 1200px) {
+    .email-footer-header {
+        text-align: start;
+    }
+}
 
 .email-footer-wrap {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+.email-footer-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 12px;
+}
 }
 
 .email-footer-input {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+li<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -19,10 +19,14 @@
 <body>
     <header>
         <div class="container header-container">
-           
-
+        
             <a href="/" class="logo" lang="en">Web<span class="logo-accent">Studio</span></a>
             
+            <button type="button" class="menu-toggle is-open" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
             <nav class="header-nav list">
                             
                 <ul class="header-list list">
@@ -412,6 +416,7 @@
     <footer>
         <div class="container">
         <div class="footer-content">
+        
         <div class="last-section">
             <a href="/" class="logo last-section-logo" lang="en">Web<span class="logo-accent-last">Studio</span></a>
             <address class="address">
@@ -462,7 +467,7 @@
                 </li>
             </ul>
         </div>
-
+        
         <div class="email-footer">
             <h3 class="email-footer-header">Підпишіться на розсилку</h3>
             <form name="email-footer-form">
@@ -479,6 +484,49 @@
         </div>
         </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="menu-svg" width="19" height="19">
+                <use href="./images/icons.svg#icon-close_24px"></use>
+            </svg>
+        </button>
+        <ul class="mobile-list list">
+            <li class="mobile-item mobile-nav-item">
+                <a class="mobile-link links" href="">Студія</a>
+            </li>
+            <li class="mobile-item mobile-nav-item">
+                <a class="mobile-link links" href="">Портфоліо</a>
+            </li>
+            <li class="mobile-item mobile-nav-item">
+                <a class="mobile-link links" href="">Контакти</a>
+            </li>
+       </ul>
+        <ul class="mobile-list list">
+            <li class="mobile-item mobile-contact-item">
+                <a href="tel:+380991111111" class="mobile-phone-link links">+38 099 111 11 11</a>
+            </li>
+            <li class="mobile-item mobile-contact-item">
+                <a href="malito:info@example.com" class="mobile-email-link links">info@example.com</a>
+            </li>
+
+        </ul>
+
+        <ul class="mobile-socials list">
+            <li class="mobile-socials-item">
+                <a class="mobile-socials-link links" href="">Instagram</a>
+            </li>
+            <li class="mobile-socials-item">
+                <a class="mobile-socials-link links" href="">Twitter</a>
+            </li>
+            <li class="mobile-socials-item">
+                <a class="mobile-socials-link links" href="">Facebook</a>
+            </li>
+            <li class="mobile-socials-item">
+                <a class="mobile-socials-link links" href="">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -538,5 +586,9 @@
 
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>

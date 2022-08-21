@@ -17,16 +17,39 @@
 }
 
 .features-list__item {
+
+    width: 450px;
+}
+@media screen and (min-width: 768px) {
+    .features-list__item {
+    width: 354px;
+}
+}
+@media screen and (min-width: 1200px) {
+    .features-list__item {
     width: 270px;
+    }
 }
 
 .features-list__header {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+.features-list__header {
+    margin-left: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
 }
 
 .features-list__text {

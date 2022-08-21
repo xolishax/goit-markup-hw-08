@@ -1,6 +1,19 @@
 .contacts-list {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 75px;
+    }
+}
+@media screen and (min-width: 1200px) {
+.contacts-list {
     display: flex;
+    flex-direction: row;
     margin-left: auto;
+}
 }
 
 .contacts-item:not(:last-child) {

@@ -4,13 +4,18 @@
 
 .team__header {
     font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
+    font-size: 28px;
+    line-height: calc(28 / 33);
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-
+@media screen and (min-width: 1200px) {
+    .team__header {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    }
+}
 .team-list {
     display: flex;
     flex-wrap: wrap;

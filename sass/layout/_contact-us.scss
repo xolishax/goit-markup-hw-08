@@ -22,3 +22,11 @@
 .contact-us-icon {
     fill: #FFFFFF;
 }
+.contact-us-header {
+    text-align: center;
+}
+ @media screen and (min-width: 1200px) {
+    .contact-us-header {
+            text-align: start;
+        }
+ }

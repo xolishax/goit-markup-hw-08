@@ -71,7 +71,7 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -87,5 +87,16 @@
     &:focus {
         color: #2196F3;
         border: 1px solid #2196F3;
+    }
+
+}
+.clients-icons-link {
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+    }
+.clients-icons-link {
+    @media screen and (min-width: 1200px) {
+        width: 170px;
     }
 }
