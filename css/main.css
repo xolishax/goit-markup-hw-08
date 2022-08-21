@@ -53,6 +53,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .decision-btn {
@@ -199,6 +201,21 @@ img {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -654,8 +671,6 @@ header {
 }
 
 .hero-section {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/teammain.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/teammain.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -663,7 +678,41 @@ header {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
   background-color: var(--dark-bg-color);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/teammain@1x_sm.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/teammain@1x_sm.png);
+  background-image: -webkit-image-set "../../images/teammain@1x_sm.webp";
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/teammain@2x_sm.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/teammain@2x_sm.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/teammain@1x_md.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/teammain@1x_md.png);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/teammain@2x_md.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/teammain@2x_md.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/teammain@1x_lg.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/teammain@1x_lg.png);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/teammain@2x_lg.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/teammain@2x_lg.png);
+  }
 }
 
 .decision-section {
@@ -727,7 +776,20 @@ header {
 }
 
 .do-section {
-  padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .do-section {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .do-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+  }
 }
 
 .do__header {
@@ -1052,6 +1114,20 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+}
+
+.portfolio-list {
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    --items: 4;
+  }
 }
 
 .all-list {

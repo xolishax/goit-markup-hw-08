@@ -131,9 +131,29 @@
     <section class="team-section section">
     <div class="container team__container">
         <h2 class="team__header">Наша команда</h2>
-        <ul class="team-list list">
-            <li class="team-list__item">
-                <img class="team-list__photo" src="./images/img4.jpg" alt="работник 1" width="270">
+        <ul class="team-list list card-set">
+            <li class="team-list__item card-set-item">
+                    <picture>
+                        <!-- desctop -->
+                        <source media="(min-width: 1200px)" 
+                        srcset="./images\team\img4@1x_lg.webp 1x, 
+                        ./images\team\img4@2x_lg.webp 2x" 
+                        type="image/webp">
+                        <source media="(min-width: 1200px)" srcset="./images\team\img4@1x_lg.jpg 1x, 
+                        ./images\team\img4@2x_lg.jpg 2x"
+                        type="image/jpg">
+                        <!-- tablet -->
+                        <source media="(min-width: 768px)" srcset="./images\team\img4@1x_md.webp 1x, 
+                        ./images\team\img4@2x_md.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="./images\team\img4@1x_md.jpg 1x, 
+                        ./images\team\img4@2x_md.jpg 2x" type="image/jpg">
+                        <!-- mobile -->
+                        <source media="(max-width: 767px)" srcset="./images\team\img4@1x_sm.webp 1x, 
+                        ./images\team\img4@2x_sm.webp 2x" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="./images\team\img4@1x_sm.jpg 1x, 
+                        ./images\team\img4@2x_sm.jpg 2x" type="image/jpg">
+                        <img src="./images\team\img4@1x_sm.jpg" alt="работник 1" class="team-list__photo">
+                    </picture>
                 <div class="team-list__wrapper">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__text" lang="en">Product Designer</p>
@@ -170,8 +190,25 @@
                 </div>
             </li>
 
-            <li class="team-list__item">
-                <img class="team-list__photo" src="./images/img5.jpg" alt="работник 2" width="270">
+            <li class="team-list__item card-set-item">
+                    <picture>
+                        <!-- desctop -->
+                        <source media="(min-width: 1200px)" srcset="./images\team\img5@1x_lg.webp 1x, 
+                                            ./images\team\img5@2x_lg.webp 2x" type="image/webp">
+                        <source media="(min-width: 1200px)" srcset="./images\team\img5@1x_lg.jpg 1x, 
+                                            ./images\team\img5@2x_lg.jpg 2x" type="image/jpg">
+                        <!-- tablet -->
+                        <source media="(min-width: 768px)" srcset="./images\team\img5@1x_md.webp 1x, 
+                                            ./images\team\img5@2x_md.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="./images\team\img5@1x_md.jpg 1x, 
+                                            ./images\team\img5@2x_md.jpg 2x" type="image/jpg">
+                        <!-- mobile -->
+                        <source media="(max-width: 767px)" srcset="./images\team\img5@1x_sm.webp 1x, 
+                                            ./images\team\img5@2x_sm.webp 2x" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="./images\team\img5@1x_sm.jpg 1x, 
+                                            ./images\team\img5@2x_sm.jpg 2x" type="image/jpg">
+                        <img src="./images\team\img5@1x_sm.jpg" alt="работник 2" class="team-list__photo">
+                    </picture>
                 <div class="team-list__wrapper">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -208,8 +245,25 @@
                 </div>
             </li>
 
-            <li class="team-list__item">
-                <img class="team-list__photo" src="./images/img6.jpg" alt="работник 3" width="270">
+            <li class="team-list__item card-set-item">
+                    <picture>
+                        <!-- desctop -->
+                        <source media="(min-width: 1200px)" srcset="./images\team\img6@1x_lg.webp 1x, 
+                                            ./images\team\img6@2x_lg.webp 2x" type="image/webp">
+                        <source media="(min-width: 1200px)" srcset="./images\team\img6@1x_lg.jpg 1x, 
+                                            ./images\team\img6@2x_lg.jpg 2x" type="image/jpg">
+                        <!-- tablet -->
+                        <source media="(min-width: 768px)" srcset="./images\team\img6@1x_md.webp 1x, 
+                                            ./images\team\img6@2x_md.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="./images\team\img6@1x_md.jpg 1x, 
+                                            ./images\team\img6@2x_md.jpg 2x" type="image/jpg">
+                        <!-- mobile -->
+                        <source media="(max-width: 767px)" srcset="./images\team\img6@1x_sm.webp 1x, 
+                                            ./images\team\img6@2x_sm.webp 2x" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="./images\team\img6@1x_sm.jpg 1x, 
+                                            ./images\team\img6@2x_sm.jpg 2x" type="image/jpg">
+                        <img src="./images\team\img6@1x_sm.jpg" alt="работник 3" class="team-list__photo">
+                    </picture>
                 <div class="team-list__wrapper">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__text" lang="en">Marketing</p>
@@ -246,8 +300,25 @@
                 </div>
             </li>
 
-            <li class="team-list__item">
-                <img class="team-list__photo" src="./images/img7.jpg" alt="работник 4" width="270">
+            <li class="team-list__item card-set-item">
+                    <picture>
+                        <!-- desctop -->
+                        <source media="(min-width: 1200px)" srcset="./images\team\img7@1x_lg.webp 1x, 
+                                            ./images\team\img7@2x_lg.webp 2x" type="image/webp">
+                        <source media="(min-width: 1200px)" srcset="./images\team\img7@1x_lg.jpg 1x, 
+                                            ./images\team\img7@2x_lg.jpg 2x" type="image/jpg">
+                        <!-- tablet -->
+                        <source media="(min-width: 768px)" srcset="./images\team\img7@1x_md.webp 1x, 
+                                            ./images\team\img7@2x_md.webp 2x" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="./images\team\img7@1x_md.jpg 1x, 
+                                            ./images\team\img7@2x_md.jpg 2x" type="image/jpg">
+                        <!-- mobile -->
+                        <source media="(max-width: 767px)" srcset="./images\team\img7@1x_sm.webp 1x, 
+                                            ./images\team\img7@2x_sm.webp 2x" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="./images\team\img7@1x_sm.jpg 1x, 
+                                            ./images\team\img7@2x_sm.jpg 2x" type="image/jpg">
+                        <img src="./images\team\img7@1x_sm.jpg" alt="работник 4" class="team-list__photo">
+                    </picture>
                 <div class="team-list__wrapper">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__text" lang="en">UI Designer</p>
